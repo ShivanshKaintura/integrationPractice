@@ -26,7 +26,7 @@ public class HelloWorldController {
         }
         fromEmail = "user-" + clientIp.replace(".", "-") + "@gmail.com";
         if (fromEmail == null || fromEmail.isEmpty()) {
-            fromEmail = "kainturashi@gmail.com"; // Fallback if no email is provided
+            fromEmail = "kainturashi@gmail.com";
         }
         emailService.sendSimpleEmail(
                 fromEmail,
