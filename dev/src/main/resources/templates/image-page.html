@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Show Image</title>
+    <style>
+        /* Option 1: Center image using block display and auto margin */
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%; /* keeps image responsive */
+            height: auto;
+        }
+
+        /* Optional: center the title too */
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2 th:text="${title}"></h2>
+<img th:src="${imageUrl}" alt="Space Image">
+</body>
+</html>
